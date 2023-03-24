@@ -1,0 +1,33 @@
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Testo di prova per un sito html</title>
+</head>
+
+
+<body>
+<h1>Benvenuto in questo sito di </h1>
+<p>questo è un semplice tag di testo</p>
+<p>questo sito ti mostra un buco nero</p>
+<img src="https://www.nasa.gov/sites/default/files/styles/full_width/
+public/thumbnails/image/blackhole.png?itok=THJrwcHP" width="200" length="120">
+<p>ora aggiungiamo  un bottone(pulsante)</p>
+<button>cliccami non faccio nulla</button>
+<!-- però se ti serve un pulsante più serio abbiamo -->
+<button id="myButton"><span>Clicca qui! a 5km da te</span></button>
+<h2>Quante volte hai perso tempo a cliccare questo pulsante:<span id="count">0</span> volte.</h2>
+
+<script>
+	var count=0;
+	var button=document.getElementById("myButton");
+	var counter=document.getElementById("count");
+	
+	button.addEventListener("click",function(){
+		count++;
+		counter.innerText=count;
+		
+	});
+
+</script>
+</body>
+</html>
